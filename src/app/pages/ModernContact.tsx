@@ -26,23 +26,23 @@ export default function ModernContact() {
   const socialLinks = [
     {
       name: 'Email',
-      username: 'Jerxy@gmail.com',
+      username: 'JexyDev@gmail.com',
       icon: Mail,
-      url: 'mailto:Jerxy@gmail.com',
+      url: 'mailto:JexyDev@gmail.com',
       color: 'hover:bg-gray-100 dark:hover:bg-gray-900'
     },
     {
       name: 'LinkedIn',
-      username: '@JerxyDev',
+      username: '@JexyDev',
       icon: Linkedin,
-      url: 'https://linkedin.com/in/JerxyDev',
+      url: 'https://linkedin.com/in/JeremyDarrell',
       color: 'hover:bg-gray-100 dark:hover:bg-gray-900'
     },
     {
       name: 'GitHub',
-      username: '@JerxyDev',
+      username: '@JexyDev',
       icon: Github,
-      url: 'https://github.com/JerxyDev',
+      url: 'https://github.com/JexyDev',
       color: 'hover:bg-gray-100 dark:hover:bg-gray-900'
     },
     {

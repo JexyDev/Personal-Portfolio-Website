@@ -2,9 +2,9 @@ import { motion } from 'motion/react';
 import { Mail, Phone, Github, Linkedin } from 'lucide-react';
 
 const contacts = [
-  { icon: Mail, label: 'Email', value: 'JerxyDev@gmail.com', href: 'mailto:JerxyDev@gmail.com' },
+  { icon: Mail, label: 'Email', value: 'JexyDev@gmail.com', href: 'mailto:JexyDev@gmail.com' },
   { icon: Phone, label: 'WhatsApp', value: '+62 817 6695 922', href: 'https://wa.me/628176695922' },
-  { icon: Github, label: 'GitHub', value: 'github.com/Jerxydev', href: 'https://github.com/Jerxydev' },
+  { icon: Github, label: 'GitHub', value: 'github.com/JexyDev', href: 'https://github.com/JexyDev' },
   { icon: Linkedin, label: 'LinkedIn', value: 'Jeremy Darrell Andreas', href: '#' },
 ];
 

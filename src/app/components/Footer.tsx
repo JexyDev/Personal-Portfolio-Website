@@ -1,7 +1,7 @@
 import { Github, Linkedin, Phone } from 'lucide-react';
 
 const socials = [
-  { icon: Github, href: 'https://github.com/Jerxydev' },
+  { icon: Github, href: 'https://github.com/Jexydev' },
   { icon: Linkedin, href: '#' },
   { icon: Phone, href: 'https://wa.me/628176695922' },
 ];

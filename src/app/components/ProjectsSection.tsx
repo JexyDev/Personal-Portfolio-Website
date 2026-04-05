@@ -3,25 +3,31 @@ import { Github, ExternalLink } from 'lucide-react';
 
 const projects = [
   {
-    title: 'Smart Calculator UI',
-    description: 'A responsive calculator with modern UI, keyboard support, and dark/light theme toggle.',
-    tags: ['HTML', 'CSS', 'JavaScript'],
+    title: 'TOMALO — Local Food Marketplace',
+    image: '/projects/tomalo.png',
+    bg: '#E0D7FF',
+    description: "TOMALO: Where Nusantara's Heart Meets Your Table. A modern hyper-local food hub bringing the authentic taste of Indonesia—from ready-to-eat traditional snacks to fresh farm-to-table ingredients—directly to your fingertips.",
+    tags: ['Figma', 'UI/UX', 'Product Design'],
+    status: 'Design Phase',
+    statusColor: '#7F77DD',
+  },
+  {
+    title: 'Dukuh Dalam: Digital Heritage',
+    image: '/projects/dukuh.png',
+    bg: '#121412',
+    description: "An immersive digital journey to preserve the ancestral traditions and historical legacy of Kampung Adat Dukuh Dalam. A cultural documentation platform designed for impact.",
+    tags: ['Next.js', 'Storytelling', 'Culture'],
     status: 'Live',
     statusColor: '#22c55e',
   },
   {
-    title: 'Modern Portfolio Concept',
-    description: 'A clean, animated portfolio template built with React and Framer Motion for developers.',
-    tags: ['React'],
-    status: 'In Progress',
-    statusColor: '#f59e0b',
-  },
-  {
-    title: 'Simple Task Manager',
-    description: 'A fullstack task management app with authentication, CRUD operations, and REST API.',
-    tags: ['Laravel'],
-    status: 'Coming Soon',
-    statusColor: '#6b7280',
+    title: 'ArduSense: Intelligent IoT System',
+    image: '/projects/iot.png',
+    bg: '#0A0D11',
+    description: "A real-world IoT implementation integrating ultrasonic, motion, and climate sensors for smart automation. Features real-time data processing and a custom LCD interface.",
+    tags: ['Arduino', 'IoT', 'C++', 'Electronics'],
+    status: 'Live',
+    statusColor: '#22c55e',
   },
 ];
 
@@ -83,12 +89,23 @@ export function ProjectsSection() {
                 borderBottom: '0.5px solid #2a2a2a',
               }}
             >
-              <div className="flex flex-col items-center gap-2">
-                <div className="w-10 h-10 rounded-lg flex items-center justify-center" style={{ backgroundColor: '#1a1a1a', border: '0.5px solid #2a2a2a' }}>
-                  <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: '12px', color: 'rgba(255,255,255,0.3)' }}>{'</>'}</span>
+              {project.image ? (
+                <div className="w-full h-full flex items-center justify-center p-1" style={{ backgroundColor: project.bg }}>
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-[1.03]"
+                    style={{ imageRendering: 'auto' }}
+                  />
                 </div>
-                <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: '11px', color: 'rgba(255,255,255,0.2)' }}>Preview</span>
-              </div>
+              ) : (
+                <div className="flex flex-col items-center gap-2">
+                  <div className="w-10 h-10 rounded-lg flex items-center justify-center" style={{ backgroundColor: '#1a1a1a', border: '0.5px solid #2a2a2a' }}>
+                    <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: '12px', color: 'rgba(255,255,255,0.3)' }}>{'</>'}</span>
+                  </div>
+                  <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: '11px', color: 'rgba(255,255,255,0.2)' }}>Preview</span>
+                </div>
+              )}
               {/* Status badge */}
               <span
                 className="absolute top-3 right-3 flex items-center gap-1.5 px-2.5 py-1"
