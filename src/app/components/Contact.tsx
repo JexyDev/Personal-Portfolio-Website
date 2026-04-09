@@ -84,19 +84,19 @@ export default function Contact() {
                 Let's work together
               </h3>
               <p className="text-gray-600 dark:text-gray-400 mb-6">
-                I'm always interested in hearing about new projects and opportunities. 
+                I'm always interested in hearing about new projects and opportunities.
                 Whether you have a question or just want to say hi, feel free to reach out!
               </p>
 
               <div className="space-y-4">
                 <motion.a
-                  href="mailto:jeremy@example.com"
+                  href="mailto:JeremyDarrell@gmail.com"
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
                   className="flex items-center gap-3 p-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-xl hover:shadow-lg transition-shadow"
                 >
                   <Mail className="w-5 h-5" />
-                  <span className="font-medium">jeremy@example.com</span>
+                  <span className="font-medium">JeremyDarrell@gmail.com</span>
                 </motion.a>
 
                 <div className="pt-4">
@@ -145,7 +145,7 @@ export default function Contact() {
                       type="text"
                       value={formData.name}
                       onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                      placeholder="John Doe"
+                      placeholder="Jeremy Darrell A"
                       className="w-full pl-10 pr-4 py-3 bg-white dark:bg-gray-900 border border-gray-300 dark:border-gray-700 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent outline-none transition-all text-gray-900 dark:text-white"
                     />
                   </div>

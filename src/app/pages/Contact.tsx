@@ -20,7 +20,7 @@ export default function Contact() {
     {
       name: 'Email',
       icon: Mail,
-      url: 'mailto:jeremy@example.com',
+      url: 'mailto:JeremyDarrell@gmail.com',
       color: 'bg-green-500 hover:bg-green-600'
     },
     {

@@ -103,7 +103,7 @@ export default function Guestbook() {
                 value={formData.name}
                 onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                 className="w-full bg-gray-800/50 border border-gray-700 rounded-lg px-4 py-3 text-white focus:border-cyan-500 focus:outline-none transition-colors"
-                placeholder="John Doe"
+                placeholder="Jeremy Darrell A"
               />
             </div>
 

@@ -72,36 +72,37 @@ export function AboutSection() {
               color: 'rgba(255,255,255,0.55)',
             }}
           >
-            I'm Jeremy, a PPLG student at SMK Wikrama Bogor on a mission to become a competent Fullstack Developer. I believe great software is built on clarity, consistency, and the courage to keep learning — even when the stack grows fast.
+            I'm a 17-year-old developer from Indonesia with a background in Software and Game Development. I focus on creating clean, efficient, and user-centric web experiences. My journey is fueled by a relentless curiosity and a commitment to writing high-quality code that solves real-world problems.
           </p>
 
           {/* Stat cards */}
           <div className="flex gap-4 mb-8">
             {[
-              { value: '2+', label: 'Years Learning' },
-              { value: '5+', label: 'Mini Projects Built' },
+              { value: '2+', label: 'Years Exp.' },
+              { value: '15+', label: 'Projects Done' },
+              { value: '12+', label: 'Skills Mastered' },
             ].map((stat) => (
               <div
                 key={stat.label}
-                className="flex-1 p-5"
+                className="flex-1 p-5 text-center"
                 style={{
                   backgroundColor: '#161616',
                   border: '0.5px solid #2a2a2a',
                   borderRadius: '12px',
                 }}
               >
-                <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: '28px', fontWeight: 600, color: '#fff' }}>
+                <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: '24px', fontWeight: 600, color: '#fff' }}>
                   {stat.value}
                 </div>
-                <div style={{ fontFamily: "'Inter', sans-serif", fontSize: '13px', color: 'rgba(255,255,255,0.45)' }}>
+                <div style={{ fontFamily: "'Inter', sans-serif", fontSize: '11px', color: 'rgba(255,255,255,0.3)', textTransform: 'uppercase', letterSpacing: '0.05em', marginTop: '4px' }}>
                   {stat.label}
                 </div>
               </div>
             ))}
           </div>
 
-          <p style={{ fontFamily: "'Inter', sans-serif", fontSize: '14px', lineHeight: 1.7, color: 'rgba(255,255,255,0.35)' }}>
-            My goal in the next 1–2 years: contribute to products that help local businesses scale internationally.
+          <p style={{ fontFamily: "'Inter', sans-serif", fontSize: '14px', lineHeight: 1.7, color: 'rgba(255,255,255,0.35)', borderLeft: '2px solid #7F77DD', paddingLeft: '16px' }}>
+            My long-term goal is to bridge the gap between complex backend systems and intuitive frontend interfaces to build products that scale globally.
           </p>
         </motion.div>
       </div>
