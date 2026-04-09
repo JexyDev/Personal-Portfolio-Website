@@ -45,7 +45,7 @@ export default function Guestbook() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     const newEntry: GuestbookEntry = {
       id: entries.length + 1,
       name: formData.name,
@@ -60,10 +60,10 @@ export default function Guestbook() {
 
   const formatDate = (dateString: string) => {
     const date = new Date(dateString);
-    return date.toLocaleDateString('en-US', { 
-      year: 'numeric', 
-      month: 'long', 
-      day: 'numeric' 
+    return date.toLocaleDateString('en-US', {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric'
     });
   };
 
@@ -90,7 +90,7 @@ export default function Guestbook() {
             <MessageSquare className="w-6 h-6" />
             Sign the Guestbook
           </h2>
-          
+
           <form onSubmit={handleSubmit} className="space-y-6 bg-gray-900/50 border border-gray-800 rounded-xl p-6">
             <div>
               <label htmlFor="guestName" className="block text-sm text-gray-400 mb-2">
@@ -139,7 +139,7 @@ export default function Guestbook() {
           <h2 className="text-xl font-bold mb-6">
             Recent Entries ({entries.length})
           </h2>
-          
+
           <div className="space-y-4 max-w-3xl">
             {entries.map((entry, index) => (
               <motion.div
